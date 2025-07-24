@@ -1,0 +1,6 @@
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentDataAccess\bin\Debug\ClinicPaymentDataAccess.dll
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentDataAccess\bin\Debug\ClinicPaymentDataAccess.pdb
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentDataAccess\obj\Debug\ClinicPaymentDataAccess.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentDataAccess\obj\Debug\ClinicPaymentDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentDataAccess\obj\Debug\ClinicPaymentDataAccess.dll
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentDataAccess\obj\Debug\ClinicPaymentDataAccess.pdb

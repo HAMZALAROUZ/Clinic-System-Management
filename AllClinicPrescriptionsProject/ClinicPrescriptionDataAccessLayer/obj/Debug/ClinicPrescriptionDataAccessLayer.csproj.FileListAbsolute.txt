@@ -1,0 +1,6 @@
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionDataAccessLayer\bin\Debug\ClinicPrescriptionDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionDataAccessLayer\bin\Debug\ClinicPrescriptionDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionDataAccessLayer\obj\Debug\ClinicPrescriptionDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionDataAccessLayer\obj\Debug\ClinicPrescriptionDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionDataAccessLayer\obj\Debug\ClinicPrescriptionDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionDataAccessLayer\obj\Debug\ClinicPrescriptionDataAccessLayer.pdb

@@ -1,0 +1,13 @@
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\bin\Debug\ClinicAppointmentBusinessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\bin\Debug\ClinicAppointmentBusinessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\bin\Debug\ClinicAppointmentDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\bin\Debug\ClinicDoctorDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\bin\Debug\ClinicPatientDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\bin\Debug\ClinicAppointmentDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\bin\Debug\ClinicDoctorDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\bin\Debug\ClinicPatientDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\obj\Debug\ClinicAppointmentBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\obj\Debug\ClinicAppointmentBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\obj\Debug\ClinicAp.B97AF50E.Up2Date
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\obj\Debug\ClinicAppointmentBusinessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentBusinessLayer\obj\Debug\ClinicAppointmentBusinessLayer.pdb

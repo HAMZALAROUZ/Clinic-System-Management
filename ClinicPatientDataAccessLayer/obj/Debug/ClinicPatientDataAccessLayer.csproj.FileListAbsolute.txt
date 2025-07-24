@@ -1,0 +1,6 @@
+C:\Users\Britec09\source\repos\ClinicPatientDataAccessLayer\bin\Debug\ClinicPatientDataAccessLayer.dll
+C:\Users\Britec09\source\repos\ClinicPatientDataAccessLayer\bin\Debug\ClinicPatientDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\ClinicPatientDataAccessLayer\obj\Debug\ClinicPatientDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\ClinicPatientDataAccessLayer\obj\Debug\ClinicPatientDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\ClinicPatientDataAccessLayer\obj\Debug\ClinicPatientDataAccessLayer.dll
+C:\Users\Britec09\source\repos\ClinicPatientDataAccessLayer\obj\Debug\ClinicPatientDataAccessLayer.pdb

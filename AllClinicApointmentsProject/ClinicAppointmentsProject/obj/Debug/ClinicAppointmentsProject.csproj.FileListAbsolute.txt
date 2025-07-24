@@ -1,0 +1,16 @@
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\bin\Debug\ClinicAppointmentsProject.exe.config
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\bin\Debug\ClinicAppointmentsProject.exe
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\bin\Debug\ClinicAppointmentsProject.pdb
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\bin\Debug\ClinicAppointmentBusinessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\bin\Debug\ClinicAppointmentDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\bin\Debug\ClinicDoctorDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\bin\Debug\ClinicPatientDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\bin\Debug\ClinicAppointmentBusinessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\bin\Debug\ClinicAppointmentDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\bin\Debug\ClinicDoctorDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\bin\Debug\ClinicPatientDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\obj\Debug\ClinicAppointmentsProject.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\obj\Debug\ClinicAppointmentsProject.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\obj\Debug\ClinicAp.AE87B1B8.Up2Date
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\obj\Debug\ClinicAppointmentsProject.exe
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentsProject\obj\Debug\ClinicAppointmentsProject.pdb

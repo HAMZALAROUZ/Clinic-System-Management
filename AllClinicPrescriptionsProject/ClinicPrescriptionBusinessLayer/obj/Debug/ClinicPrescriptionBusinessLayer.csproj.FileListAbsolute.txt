@@ -1,0 +1,9 @@
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionBusinessLayer\bin\Debug\ClinicPrescriptionBusinessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionBusinessLayer\bin\Debug\ClinicPrescriptionBusinessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionBusinessLayer\bin\Debug\ClinicPrescriptionDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionBusinessLayer\bin\Debug\ClinicPrescriptionDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionBusinessLayer\obj\Debug\ClinicPrescriptionBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionBusinessLayer\obj\Debug\ClinicPrescriptionBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionBusinessLayer\obj\Debug\ClinicPr.0D39909C.Up2Date
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionBusinessLayer\obj\Debug\ClinicPrescriptionBusinessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicPrescriptionsProject\ClinicPrescriptionBusinessLayer\obj\Debug\ClinicPrescriptionBusinessLayer.pdb

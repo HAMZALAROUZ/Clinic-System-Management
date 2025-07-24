@@ -1,0 +1,6 @@
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentDataAccessLayer\bin\Debug\ClinicAppointmentDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentDataAccessLayer\bin\Debug\ClinicAppointmentDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentDataAccessLayer\obj\Debug\ClinicAppointmentDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentDataAccessLayer\obj\Debug\ClinicAppointmentDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentDataAccessLayer\obj\Debug\ClinicAppointmentDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicApointmentsProject\ClinicAppointmentDataAccessLayer\obj\Debug\ClinicAppointmentDataAccessLayer.pdb

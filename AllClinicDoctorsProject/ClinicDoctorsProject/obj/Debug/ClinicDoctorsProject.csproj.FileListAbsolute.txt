@@ -1,0 +1,16 @@
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\obj\Debug\ClinicDoctorsProject.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\obj\Debug\ClinicDoctorsProject.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\bin\Debug\ClinicDoctorsProject.exe.config
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\bin\Debug\ClinicDoctorsProject.exe
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\bin\Debug\ClinicDoctorsProject.pdb
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\bin\Debug\ClinicPersonBusinessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\bin\Debug\ClinicDoctorDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\bin\Debug\ClinicPersonDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\bin\Debug\ClinicDoctorsBusinessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\bin\Debug\ClinicPersonBusinessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\bin\Debug\ClinicDoctorDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\bin\Debug\ClinicPersonDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\obj\Debug\ClinicDo.465BFAA0.Up2Date
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\obj\Debug\ClinicDoctorsProject.exe
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\obj\Debug\ClinicDoctorsProject.pdb
+C:\Users\Britec09\source\repos\AllClinicDoctorsProject\ClinicDoctorsProject\bin\Debug\ClinicDoctorsBusinessLayer.dll

@@ -1,0 +1,12 @@
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\obj\Debug\ClinicMedicalRecord.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\obj\Debug\ClinicMedicalRecord.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\bin\Debug\ClinicMedicalRecord.exe.config
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\bin\Debug\ClinicMedicalRecord.exe
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\bin\Debug\ClinicMedicalRecord.pdb
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\bin\Debug\ClinicMedicalRecordBusinessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\bin\Debug\ClinicMedicalRecordDataAcccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\bin\Debug\ClinicMedicalRecordBusinessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\bin\Debug\ClinicMedicalRecordDataAcccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\obj\Debug\ClinicMe.5B662409.Up2Date
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\obj\Debug\ClinicMedicalRecord.exe
+C:\Users\Britec09\source\repos\AllClinicMedicalRecordProject\ClinicMedicalRecord\obj\Debug\ClinicMedicalRecord.pdb

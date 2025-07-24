@@ -1,0 +1,12 @@
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\obj\Debug\ClinicPaymentProject.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\obj\Debug\ClinicPaymentProject.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\bin\Debug\ClinicPaymentProject.exe.config
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\bin\Debug\ClinicPaymentProject.exe
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\bin\Debug\ClinicPaymentProject.pdb
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\bin\Debug\ClinicPaymentBusinessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\bin\Debug\ClinicPaymentDataAccess.dll
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\bin\Debug\ClinicPaymentBusinessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\bin\Debug\ClinicPaymentDataAccess.pdb
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\obj\Debug\ClinicPa.6D06B65B.Up2Date
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\obj\Debug\ClinicPaymentProject.exe
+C:\Users\Britec09\source\repos\AllClinicPaymentProject\ClinicPaymentProject\obj\Debug\ClinicPaymentProject.pdb

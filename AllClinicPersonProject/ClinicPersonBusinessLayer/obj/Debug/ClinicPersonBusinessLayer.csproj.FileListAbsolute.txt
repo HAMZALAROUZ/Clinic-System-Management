@@ -1,0 +1,9 @@
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ClinicPersonBusinessLayer\bin\Debug\ClinicPersonBusinessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ClinicPersonBusinessLayer\bin\Debug\ClinicPersonBusinessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ClinicPersonBusinessLayer\bin\Debug\ClinicPersonDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ClinicPersonBusinessLayer\bin\Debug\ClinicPersonDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ClinicPersonBusinessLayer\obj\Debug\ClinicPersonBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ClinicPersonBusinessLayer\obj\Debug\ClinicPersonBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ClinicPersonBusinessLayer\obj\Debug\ClinicPe.3AF53A4D.Up2Date
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ClinicPersonBusinessLayer\obj\Debug\ClinicPersonBusinessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ClinicPersonBusinessLayer\obj\Debug\ClinicPersonBusinessLayer.pdb

@@ -1,0 +1,12 @@
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\obj\Debug\ClinicPersonPresenationLayer.csproj.AssemblyReference.cache
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\obj\Debug\ClinicPersonPresenationLayer.csproj.CoreCompileInputs.cache
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\bin\Debug\ClinicPersonBusinessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\bin\Debug\ClinicPersonDataAccessLayer.dll
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\bin\Debug\ClinicPersonBusinessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\bin\Debug\ClinicPersonDataAccessLayer.pdb
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\obj\Debug\ClinicPe.FD6B0CE2.Up2Date
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Britec09\source\repos\AllClinicPersonProject\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
