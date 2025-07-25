@@ -107,7 +107,7 @@ namespace ClinicSystemFormProject
                 return;
             }
 
-            //clsPatient Patient = new clsPatient();
+            
 
 
 
@@ -175,6 +175,7 @@ namespace ClinicSystemFormProject
             txbAddress.Text = Patient.Address;            
             txbPhoneNumber.Text = Patient.PhoneNumber;
             txbEmail.Text = Patient.Email;
+            lbPatientID.Text = Patient.PatientID.ToString();
 
             if(DateTime.TryParse(Patient.DateOfBirth.ToString(),out DateTime date))
             {
