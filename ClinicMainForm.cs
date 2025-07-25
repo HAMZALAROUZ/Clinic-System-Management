@@ -51,8 +51,7 @@ namespace ClinicSystemFormProject
                 case enSections.enDashboard:
                     //code
                     break;
-                case enSections.enPatient:
-                    //dgvPatients.Columns.Clear();
+                case enSections.enPatient:                    
                     Table = clsPatient.GetAllPatientsData();
                     if (Table == null)
                         return false;
@@ -61,30 +60,26 @@ namespace ClinicSystemFormProject
                     dgvPatients.Columns["DateOfBirth"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                     dgvPatients.Columns["DateOfBirth"].DefaultCellStyle.ForeColor = Color.Blue;                   
                     break;
-                case enSections.enDoctor:
-                    //dgvDoctors.Columns.Clear();
+                case enSections.enDoctor:                    
                     Table = clsDoctor.GetAllDoctorsData();
                     if (Table == null)
                         return false;
                     dgvDoctors.DataSource = Table;                   
                     break;
-                case enSections.enAppointment:
-                    //dgvAppointments.Columns.Clear();
+                case enSections.enAppointment:                    
                     Table = clsAppointment.GetAllAppointments();
                     if (Table == null)
                         return false;
                     dgvAppointments.DataSource = Table;
                     dgvAppointments.Columns["AppointmentDateTime"].DefaultCellStyle.Format = "MM/dd/yyyy";                    
                     break;
-                case enSections.enUser:
-                    //dgvUsers.Columns.Clear();
+                case enSections.enUser:                    
                     Table = clsUser.GetAllUsersData();
                     if (Table == null)
                         return false;
                     dgvUsers.DataSource = Table;                   
                     break;
-                case enSections.enPayment:
-                    //dgvPayments.Columns.Clear(); delete this for the rest 
+                case enSections.enPayment:                   
                     Table = clsPayment.GetAllPayment();
                     if (Table == null)
                         return false;
@@ -260,8 +255,7 @@ namespace ClinicSystemFormProject
                 ResizeDGVWidth(dgvAppointments);
 
                 dgvAppointments.Top = (pnMain.Height - dgvAppointments.Height) / 2;
-                dgvAppointments.Left = (pnMain.Width - dgvAppointments.Width) / 2;
-               // dgvPayments.AutoGenerateColumns = false;
+                dgvAppointments.Left = (pnMain.Width - dgvAppointments.Width) / 2;               
             }
         }
         void AccessDeniedMessage()
@@ -490,8 +484,7 @@ namespace ClinicSystemFormProject
         public void RefreshPatientList()
         {
             if (LoadData())
-            {
-                //AddImageColumn(dgvPatients);
+            {                
                 ResizeDGVWidth(dgvPatients);
 
                 dgvPatients.Top = (pnMain.Height - dgvPatients.Height) / 2;
@@ -510,7 +503,7 @@ namespace ClinicSystemFormProject
         {
             if (LoadData())
             {
-                //AddImageColumn(dgvDoctors);
+                
                 ResizeDGVWidth(dgvDoctors);
 
                 dgvDoctors.Top = (pnMain.Height - dgvDoctors.Height) / 2;
@@ -528,7 +521,7 @@ namespace ClinicSystemFormProject
         {
             if (LoadData())
             {
-                //AddImageColumn(dgvAppointments);
+                
                 ResizeDGVWidth(dgvAppointments);
 
                 dgvAppointments.Top = (pnMain.Height - dgvAppointments.Height) / 2;
@@ -539,9 +532,10 @@ namespace ClinicSystemFormProject
         {
             if(clsPatient.IsTableEmpty() || clsDoctor.IsTableEmpty())
             {
-                MessageBox.Show("Sorry There's No Any Patient or Doctor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Sorry There's No Any Patient or Doctor To Add An Appointment", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             Mode = enMode.enAdd;
             Form frm = new AddAppointmentFrm();
             frm.ShowDialog();
@@ -550,8 +544,7 @@ namespace ClinicSystemFormProject
         void RefreshUserList()
         {
             if (LoadData())
-            {
-                //AddImageColumn(dgvUsers);
+            {                
                 ResizeDGVWidth(dgvUsers);
 
                 dgvUsers.Top = (pnMain.Height - dgvUsers.Height) / 2;
@@ -634,8 +627,7 @@ namespace ClinicSystemFormProject
         {
 
             if (LoadData())
-            {
-                //AddImageColumn(dgvPayments);
+            {                
                 ResizeDGVWidth(dgvPayments);
 
                 dgvPayments.Top = (pnMain.Height - dgvPayments.Height) / 2;
@@ -864,10 +856,7 @@ namespace ClinicSystemFormProject
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
     
 }

@@ -31,17 +31,8 @@
             this.pnTop = new System.Windows.Forms.Panel();
             this.LbTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.BtnClose = new System.Windows.Forms.Button();
-            this.BtnMinimize = new System.Windows.Forms.Button();
             this.BtnMaximize = new System.Windows.Forms.Button();
             this.pnLeft = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.BtnUsers = new System.Windows.Forms.Button();
-            this.BtnAppointments = new System.Windows.Forms.Button();
-            this.BtnPayments = new System.Windows.Forms.Button();
-            this.BtnDoctors = new System.Windows.Forms.Button();
-            this.BtnPatients = new System.Windows.Forms.Button();
-            this.BtnDashboard = new System.Windows.Forms.Button();
             this.pnMain = new System.Windows.Forms.Panel();
             this.pnUsers = new System.Windows.Forms.Panel();
             this.btnUserAdd = new System.Windows.Forms.Button();
@@ -69,12 +60,21 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dgvPatients = new System.Windows.Forms.DataGridView();
             this.pnDashboard = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnLogout = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.BtnUsers = new System.Windows.Forms.Button();
+            this.BtnAppointments = new System.Windows.Forms.Button();
+            this.BtnPayments = new System.Windows.Forms.Button();
+            this.BtnDoctors = new System.Windows.Forms.Button();
+            this.BtnPatients = new System.Windows.Forms.Button();
+            this.BtnDashboard = new System.Windows.Forms.Button();
+            this.BtnClose = new System.Windows.Forms.Button();
+            this.BtnMinimize = new System.Windows.Forms.Button();
             this.pnTop.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnMain.SuspendLayout();
             this.pnUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
@@ -88,6 +88,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPatients)).BeginInit();
             this.pnDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnTop
@@ -121,28 +122,6 @@
             this.panel2.Size = new System.Drawing.Size(135, 60);
             this.panel2.TabIndex = 3;
             // 
-            // BtnClose
-            // 
-            this.BtnClose.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnClose.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_close_window_50;
-            this.BtnClose.Location = new System.Drawing.Point(89, 12);
-            this.BtnClose.Name = "BtnClose";
-            this.BtnClose.Size = new System.Drawing.Size(34, 34);
-            this.BtnClose.TabIndex = 27;
-            this.BtnClose.UseVisualStyleBackColor = false;
-            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
-            // 
-            // BtnMinimize
-            // 
-            this.BtnMinimize.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnMinimize.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_minus_48;
-            this.BtnMinimize.Location = new System.Drawing.Point(15, 12);
-            this.BtnMinimize.Name = "BtnMinimize";
-            this.BtnMinimize.Size = new System.Drawing.Size(34, 34);
-            this.BtnMinimize.TabIndex = 25;
-            this.BtnMinimize.UseVisualStyleBackColor = false;
-            this.BtnMinimize.Click += new System.EventHandler(this.BtnMinimize_Click);
-            // 
             // BtnMaximize
             // 
             this.BtnMaximize.BackColor = System.Drawing.SystemColors.Control;
@@ -157,6 +136,7 @@
             // pnLeft
             // 
             this.pnLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnLeft.Controls.Add(this.BtnLogout);
             this.pnLeft.Controls.Add(this.pictureBox2);
             this.pnLeft.Controls.Add(this.BtnUsers);
             this.pnLeft.Controls.Add(this.BtnAppointments);
@@ -170,107 +150,12 @@
             this.pnLeft.Size = new System.Drawing.Size(252, 788);
             this.pnLeft.TabIndex = 1;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::ClinicSystemFormProject.Properties.Resources.people_walking_sitting_hospital_building_city_clinic_glass_exterior_flat_vector_illustration_medical_help_emergency_architecture_healthcare_concept;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(250, 154);
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
-            // 
-            // BtnUsers
-            // 
-            this.BtnUsers.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnUsers.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnUsers.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_user_50;
-            this.BtnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnUsers.Location = new System.Drawing.Point(-2, 513);
-            this.BtnUsers.Name = "BtnUsers";
-            this.BtnUsers.Size = new System.Drawing.Size(252, 59);
-            this.BtnUsers.TabIndex = 26;
-            this.BtnUsers.Text = "Users";
-            this.BtnUsers.UseVisualStyleBackColor = false;
-            this.BtnUsers.Click += new System.EventHandler(this.BtnUsers_Click);
-            // 
-            // BtnAppointments
-            // 
-            this.BtnAppointments.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnAppointments.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAppointments.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_tear_off_calendar_50;
-            this.BtnAppointments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAppointments.Location = new System.Drawing.Point(-2, 378);
-            this.BtnAppointments.Name = "BtnAppointments";
-            this.BtnAppointments.Size = new System.Drawing.Size(252, 59);
-            this.BtnAppointments.TabIndex = 27;
-            this.BtnAppointments.Text = "Appointments";
-            this.BtnAppointments.UseVisualStyleBackColor = false;
-            this.BtnAppointments.Click += new System.EventHandler(this.BtnAppointments_Click);
-            // 
-            // BtnPayments
-            // 
-            this.BtnPayments.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnPayments.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPayments.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_bank_cards_50;
-            this.BtnPayments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPayments.Location = new System.Drawing.Point(-2, 443);
-            this.BtnPayments.Name = "BtnPayments";
-            this.BtnPayments.Size = new System.Drawing.Size(252, 59);
-            this.BtnPayments.TabIndex = 25;
-            this.BtnPayments.Text = "Payments";
-            this.BtnPayments.UseVisualStyleBackColor = false;
-            this.BtnPayments.Click += new System.EventHandler(this.BtnPayments_Click);
-            // 
-            // BtnDoctors
-            // 
-            this.BtnDoctors.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnDoctors.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDoctors.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_doctor_50;
-            this.BtnDoctors.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDoctors.Location = new System.Drawing.Point(-2, 313);
-            this.BtnDoctors.Name = "BtnDoctors";
-            this.BtnDoctors.Size = new System.Drawing.Size(252, 59);
-            this.BtnDoctors.TabIndex = 28;
-            this.BtnDoctors.Text = "Doctors";
-            this.BtnDoctors.UseVisualStyleBackColor = false;
-            this.BtnDoctors.Click += new System.EventHandler(this.BtnDoctors_Click);
-            // 
-            // BtnPatients
-            // 
-            this.BtnPatients.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnPatients.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPatients.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_sick_50;
-            this.BtnPatients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPatients.Location = new System.Drawing.Point(-2, 248);
-            this.BtnPatients.Name = "BtnPatients";
-            this.BtnPatients.Size = new System.Drawing.Size(252, 59);
-            this.BtnPatients.TabIndex = 29;
-            this.BtnPatients.Text = "Patients";
-            this.BtnPatients.UseVisualStyleBackColor = false;
-            this.BtnPatients.Click += new System.EventHandler(this.BtnPatients_Click);
-            // 
-            // BtnDashboard
-            // 
-            this.BtnDashboard.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnDashboard.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDashboard.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_dashboard_48;
-            this.BtnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDashboard.Location = new System.Drawing.Point(-2, 183);
-            this.BtnDashboard.Name = "BtnDashboard";
-            this.BtnDashboard.Size = new System.Drawing.Size(252, 59);
-            this.BtnDashboard.TabIndex = 30;
-            this.BtnDashboard.Text = "Dashboard";
-            this.BtnDashboard.UseVisualStyleBackColor = false;
-            this.BtnDashboard.Click += new System.EventHandler(this.BtnDashboard_Click);
-            // 
             // pnMain
             // 
             this.pnMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnMain.Controls.Add(this.pnAppointments);
             this.pnMain.Controls.Add(this.pnUsers);
             this.pnMain.Controls.Add(this.pnPayments);
-            this.pnMain.Controls.Add(this.pnAppointments);
             this.pnMain.Controls.Add(this.pnDoctors);
             this.pnMain.Controls.Add(this.pnPatients);
             this.pnMain.Controls.Add(this.pnDashboard);
@@ -422,7 +307,7 @@
             // txbAppointmentSearch
             // 
             this.txbAppointmentSearch.Font = new System.Drawing.Font("MV Boli", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbAppointmentSearch.Location = new System.Drawing.Point(79, 64);
+            this.txbAppointmentSearch.Location = new System.Drawing.Point(69, 64);
             this.txbAppointmentSearch.Name = "txbAppointmentSearch";
             this.txbAppointmentSearch.Size = new System.Drawing.Size(352, 43);
             this.txbAppointmentSearch.TabIndex = 16;
@@ -434,9 +319,9 @@
             this.btnAppointmentAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAppointmentAdd.FlatAppearance.BorderSize = 2;
             this.btnAppointmentAdd.Font = new System.Drawing.Font("MV Boli", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAppointmentAdd.Location = new System.Drawing.Point(958, 52);
+            this.btnAppointmentAdd.Location = new System.Drawing.Point(977, 64);
             this.btnAppointmentAdd.Name = "btnAppointmentAdd";
-            this.btnAppointmentAdd.Size = new System.Drawing.Size(171, 58);
+            this.btnAppointmentAdd.Size = new System.Drawing.Size(159, 43);
             this.btnAppointmentAdd.TabIndex = 15;
             this.btnAppointmentAdd.Text = "Add";
             this.btnAppointmentAdd.UseVisualStyleBackColor = false;
@@ -605,16 +490,6 @@
             this.pnDashboard.Size = new System.Drawing.Size(1169, 786);
             this.pnDashboard.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ClinicSystemFormProject.Properties.Resources.people_walking_sitting_hospital_building_city_clinic_glass_exterior_flat_vector_illustration_medical_help_emergency_architecture_healthcare_concept;
-            this.pictureBox1.Location = new System.Drawing.Point(267, 113);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(608, 402);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -625,6 +500,147 @@
             this.label1.Size = new System.Drawing.Size(577, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "Clinic System Management";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ClinicSystemFormProject.Properties.Resources.people_walking_sitting_hospital_building_city_clinic_glass_exterior_flat_vector_illustration_medical_help_emergency_architecture_healthcare_concept;
+            this.pictureBox1.Location = new System.Drawing.Point(267, 113);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(608, 402);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BtnLogout
+            // 
+            this.BtnLogout.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnLogout.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogout.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_logout_50;
+            this.BtnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLogout.Location = new System.Drawing.Point(0, 716);
+            this.BtnLogout.Name = "BtnLogout";
+            this.BtnLogout.Size = new System.Drawing.Size(252, 59);
+            this.BtnLogout.TabIndex = 31;
+            this.BtnLogout.Text = "Logout";
+            this.BtnLogout.UseVisualStyleBackColor = false;
+            this.BtnLogout.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::ClinicSystemFormProject.Properties.Resources.people_walking_sitting_hospital_building_city_clinic_glass_exterior_flat_vector_illustration_medical_help_emergency_architecture_healthcare_concept;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(250, 154);
+            this.pictureBox2.TabIndex = 25;
+            this.pictureBox2.TabStop = false;
+            // 
+            // BtnUsers
+            // 
+            this.BtnUsers.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnUsers.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnUsers.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_user_50;
+            this.BtnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUsers.Location = new System.Drawing.Point(-2, 513);
+            this.BtnUsers.Name = "BtnUsers";
+            this.BtnUsers.Size = new System.Drawing.Size(252, 59);
+            this.BtnUsers.TabIndex = 26;
+            this.BtnUsers.Text = "Users";
+            this.BtnUsers.UseVisualStyleBackColor = false;
+            this.BtnUsers.Click += new System.EventHandler(this.BtnUsers_Click);
+            // 
+            // BtnAppointments
+            // 
+            this.BtnAppointments.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnAppointments.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAppointments.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_tear_off_calendar_50;
+            this.BtnAppointments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAppointments.Location = new System.Drawing.Point(-2, 378);
+            this.BtnAppointments.Name = "BtnAppointments";
+            this.BtnAppointments.Size = new System.Drawing.Size(252, 59);
+            this.BtnAppointments.TabIndex = 27;
+            this.BtnAppointments.Text = "Appointments";
+            this.BtnAppointments.UseVisualStyleBackColor = false;
+            this.BtnAppointments.Click += new System.EventHandler(this.BtnAppointments_Click);
+            // 
+            // BtnPayments
+            // 
+            this.BtnPayments.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnPayments.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPayments.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_bank_cards_50;
+            this.BtnPayments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPayments.Location = new System.Drawing.Point(-2, 443);
+            this.BtnPayments.Name = "BtnPayments";
+            this.BtnPayments.Size = new System.Drawing.Size(252, 59);
+            this.BtnPayments.TabIndex = 25;
+            this.BtnPayments.Text = "Payments";
+            this.BtnPayments.UseVisualStyleBackColor = false;
+            this.BtnPayments.Click += new System.EventHandler(this.BtnPayments_Click);
+            // 
+            // BtnDoctors
+            // 
+            this.BtnDoctors.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnDoctors.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDoctors.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_doctor_50;
+            this.BtnDoctors.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDoctors.Location = new System.Drawing.Point(-2, 313);
+            this.BtnDoctors.Name = "BtnDoctors";
+            this.BtnDoctors.Size = new System.Drawing.Size(252, 59);
+            this.BtnDoctors.TabIndex = 28;
+            this.BtnDoctors.Text = "Doctors";
+            this.BtnDoctors.UseVisualStyleBackColor = false;
+            this.BtnDoctors.Click += new System.EventHandler(this.BtnDoctors_Click);
+            // 
+            // BtnPatients
+            // 
+            this.BtnPatients.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnPatients.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPatients.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_sick_50;
+            this.BtnPatients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPatients.Location = new System.Drawing.Point(-2, 248);
+            this.BtnPatients.Name = "BtnPatients";
+            this.BtnPatients.Size = new System.Drawing.Size(252, 59);
+            this.BtnPatients.TabIndex = 29;
+            this.BtnPatients.Text = "Patients";
+            this.BtnPatients.UseVisualStyleBackColor = false;
+            this.BtnPatients.Click += new System.EventHandler(this.BtnPatients_Click);
+            // 
+            // BtnDashboard
+            // 
+            this.BtnDashboard.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnDashboard.Font = new System.Drawing.Font("Reem Kufi", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDashboard.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_dashboard_48;
+            this.BtnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDashboard.Location = new System.Drawing.Point(-2, 183);
+            this.BtnDashboard.Name = "BtnDashboard";
+            this.BtnDashboard.Size = new System.Drawing.Size(252, 59);
+            this.BtnDashboard.TabIndex = 30;
+            this.BtnDashboard.Text = "Dashboard";
+            this.BtnDashboard.UseVisualStyleBackColor = false;
+            this.BtnDashboard.Click += new System.EventHandler(this.BtnDashboard_Click);
+            // 
+            // BtnClose
+            // 
+            this.BtnClose.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnClose.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_close_window_50;
+            this.BtnClose.Location = new System.Drawing.Point(89, 12);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(34, 34);
+            this.BtnClose.TabIndex = 27;
+            this.BtnClose.UseVisualStyleBackColor = false;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // BtnMinimize
+            // 
+            this.BtnMinimize.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnMinimize.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_minus_48;
+            this.BtnMinimize.Location = new System.Drawing.Point(15, 12);
+            this.BtnMinimize.Name = "BtnMinimize";
+            this.BtnMinimize.Size = new System.Drawing.Size(34, 34);
+            this.BtnMinimize.TabIndex = 25;
+            this.BtnMinimize.UseVisualStyleBackColor = false;
+            this.BtnMinimize.Click += new System.EventHandler(this.BtnMinimize_Click);
             // 
             // ClinicMainForm
             // 
@@ -641,7 +657,6 @@
             this.pnTop.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.pnLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnMain.ResumeLayout(false);
             this.pnUsers.ResumeLayout(false);
             this.pnUsers.PerformLayout();
@@ -661,6 +676,7 @@
             this.pnDashboard.ResumeLayout(false);
             this.pnDashboard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -710,6 +726,7 @@
         private System.Windows.Forms.Button BtnDoctors;
         private System.Windows.Forms.Button BtnDashboard;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button BtnLogout;
     }
 }
 
