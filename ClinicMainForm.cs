@@ -141,8 +141,9 @@ namespace ClinicSystemFormProject
                     AddImageColumn(dgvPatients);
                 ResizeDGVWidth(dgvPatients);
 
-                dgvPatients.Top = (pnMain.Height - dgvPatients.Height) / 2;
-                dgvPatients.Left = (pnMain.Width - dgvPatients.Width) / 2;
+                CenterDataGridView(dgvPatients);
+
+                
             }
             
 
@@ -222,8 +223,10 @@ namespace ClinicSystemFormProject
                     AddImageColumn(dgvDoctors);
                 ResizeDGVWidth(dgvDoctors);
 
-                dgvDoctors.Top = (pnMain.Height - dgvDoctors.Height) / 2;
-                dgvDoctors.Left = (pnMain.Width - dgvDoctors.Width) / 2;
+
+                CenterDataGridView(dgvDoctors);
+
+                
             }
         }
 
@@ -254,8 +257,9 @@ namespace ClinicSystemFormProject
                 AddImageColumn(dgvAppointments);
                 ResizeDGVWidth(dgvAppointments);
 
-                dgvAppointments.Top = (pnMain.Height - dgvAppointments.Height) / 2;
-                dgvAppointments.Left = (pnMain.Width - dgvAppointments.Width) / 2;               
+                CenterDataGridView(dgvAppointments);
+
+                             
             }
         }
         void AccessDeniedMessage()
@@ -290,9 +294,9 @@ namespace ClinicSystemFormProject
                 if (!(dgvUsers.Columns.Contains("UP") && dgvUsers.Columns.Contains("DE")))
                     AddImageColumn(dgvUsers);
                 ResizeDGVWidth(dgvUsers);
+                CenterDataGridView(dgvUsers);
 
-                dgvUsers.Top = (pnMain.Height - dgvUsers.Height) / 2;
-                dgvUsers.Left = (pnMain.Width - dgvUsers.Width) / 2;
+                
             }
 
         }
@@ -328,9 +332,9 @@ namespace ClinicSystemFormProject
                 AddImageColumn(dgvPayments);
 
                 ResizeDGVWidth(dgvPayments);
+                CenterDataGridView(dgvPayments);
 
-                dgvPayments.Top  = (pnMain.Height - dgvPayments.Height) / 2;
-                dgvPayments.Left = (pnMain.Width - dgvPayments.Width) / 2;
+                
             }
 
 
@@ -486,9 +490,10 @@ namespace ClinicSystemFormProject
             if (LoadData())
             {                
                 ResizeDGVWidth(dgvPatients);
+                CenterDataGridView(dgvPatients);
 
-                dgvPatients.Top = (pnMain.Height - dgvPatients.Height) / 2;
-                dgvPatients.Left = (pnMain.Width - dgvPatients.Width) / 2;
+                //dgvPatients.Top = (pnMain.Height - dgvPatients.Height) / 2;
+                //dgvPatients.Left = (pnMain.Width - dgvPatients.Width) / 2;
             }
         }
         private void btnPatientAdd_Click(object sender, EventArgs e)
@@ -498,16 +503,21 @@ namespace ClinicSystemFormProject
             frm.ShowDialog();
             RefreshPatientList();
         }
-
+        private void CenterDataGridView(DataGridView dgv)
+        {
+            
+            dgv.Left = (pnPatients.Width - dgv.Width) / 2;
+        }
         void RefreshDoctorList()
         {
             if (LoadData())
             {
                 
                 ResizeDGVWidth(dgvDoctors);
+                CenterDataGridView(dgvDoctors);
 
-                dgvDoctors.Top = (pnMain.Height - dgvDoctors.Height) / 2;
-                dgvDoctors.Left = (pnMain.Width - dgvDoctors.Width) / 2;
+                //dgvDoctors.Top = (pnMain.Height - dgvDoctors.Height) / 2;
+                //dgvDoctors.Left = (pnMain.Width - dgvDoctors.Width) / 2;
             }
         }
         private void btnDoctorAdd_Click(object sender, EventArgs e)
@@ -523,9 +533,10 @@ namespace ClinicSystemFormProject
             {
                 
                 ResizeDGVWidth(dgvAppointments);
+                CenterDataGridView(dgvAppointments);
 
-                dgvAppointments.Top = (pnMain.Height - dgvAppointments.Height) / 2;
-                dgvAppointments.Left = (pnMain.Width - dgvAppointments.Width) / 2;
+                //dgvAppointments.Top = (pnMain.Height - dgvAppointments.Height) / 2;
+                //dgvAppointments.Left = (pnMain.Width - dgvAppointments.Width) / 2;
             }
         }
         private void btnAppointmentAdd_Click(object sender, EventArgs e)
@@ -546,9 +557,10 @@ namespace ClinicSystemFormProject
             if (LoadData())
             {                
                 ResizeDGVWidth(dgvUsers);
+                CenterDataGridView(dgvUsers);
 
-                dgvUsers.Top = (pnMain.Height - dgvUsers.Height) / 2;
-                dgvUsers.Left = (pnMain.Width - dgvUsers.Width) / 2;
+                //dgvUsers.Top = (pnMain.Height - dgvUsers.Height) / 2;
+                //dgvUsers.Left = (pnMain.Width - dgvUsers.Width) / 2;
             }
         }
         private void dgvAppointments_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -629,9 +641,10 @@ namespace ClinicSystemFormProject
             if (LoadData())
             {                
                 ResizeDGVWidth(dgvPayments);
+                CenterDataGridView(dgvPayments);
 
-                dgvPayments.Top = (pnMain.Height - dgvPayments.Height) / 2;
-                dgvPayments.Left = (pnMain.Width - dgvPayments.Width) / 2;
+                //dgvPayments.Top = (pnMain.Height - dgvPayments.Height) / 2;
+                //dgvPayments.Left = (pnMain.Width - dgvPayments.Width) / 2;
             }
         }
 
@@ -754,6 +767,9 @@ namespace ClinicSystemFormProject
                 
                 Table.DefaultView.RowFilter = "PaymentID = " + ID;
                 dgvPayments.DataSource = Table.DefaultView;
+
+                ResizeDGVWidth(dgvPayments);
+                CenterDataGridView(dgvPayments);
             }
             else if(string.IsNullOrWhiteSpace(txbPaymentSearch.Text))
             {
@@ -771,6 +787,9 @@ namespace ClinicSystemFormProject
 
                 Table.DefaultView.RowFilter = "UserID = " + ID;
                 dgvUsers.DataSource = Table.DefaultView;
+
+                ResizeDGVWidth(dgvUsers);
+                CenterDataGridView(dgvUsers);
             }
             else if(!(string.IsNullOrWhiteSpace(txbUserSearch.Text) && int.TryParse(txbUserSearch.Text, out int ID1)))
             {
@@ -779,6 +798,9 @@ namespace ClinicSystemFormProject
 
                 Table.DefaultView.RowFilter = $"UserName LIKE '{txbUserSearch.Text}%'"; ;
                 dgvUsers.DataSource = Table.DefaultView;
+
+                ResizeDGVWidth(dgvUsers);
+                CenterDataGridView(dgvUsers);
             }
             else if (string.IsNullOrWhiteSpace(txbPaymentSearch.Text))
             {
@@ -798,6 +820,9 @@ namespace ClinicSystemFormProject
 
                 Table.DefaultView.RowFilter = "DoctorID = " + ID;
                 dgvDoctors.DataSource = Table.DefaultView;
+
+                ResizeDGVWidth(dgvDoctors);
+                CenterDataGridView(dgvDoctors);
             }
             else if (!(string.IsNullOrWhiteSpace(txbDoctorSearch.Text) && int.TryParse(txbDoctorSearch.Text, out int ID1)))
             {
@@ -806,6 +831,9 @@ namespace ClinicSystemFormProject
 
                 Table.DefaultView.RowFilter = $"Name LIKE '{txbDoctorSearch.Text}%'"; ;
                 dgvDoctors.DataSource = Table.DefaultView;
+
+                ResizeDGVWidth(dgvDoctors);
+                CenterDataGridView(dgvDoctors);
             }
             else if (string.IsNullOrWhiteSpace(txbDoctorSearch.Text))
             {
@@ -823,6 +851,8 @@ namespace ClinicSystemFormProject
 
                 Table.DefaultView.RowFilter = "PatientID = " + ID;
                 dgvPatients.DataSource = Table.DefaultView;
+                ResizeDGVWidth(dgvPatients);
+                CenterDataGridView(dgvPatients);
             }
             else if (!(string.IsNullOrWhiteSpace(txbPatientSearch.Text) && int.TryParse(txbPatientSearch.Text, out int ID1)))
             {
@@ -831,6 +861,8 @@ namespace ClinicSystemFormProject
 
                 Table.DefaultView.RowFilter = $"Name LIKE '{txbPatientSearch.Text}%'"; ;
                 dgvPatients.DataSource = Table.DefaultView;
+                ResizeDGVWidth(dgvPatients);
+                CenterDataGridView(dgvPatients);
             }
             else if (string.IsNullOrWhiteSpace(txbPatientSearch.Text))
             {
@@ -848,6 +880,9 @@ namespace ClinicSystemFormProject
 
                 Table.DefaultView.RowFilter = "AppointmentID = " + ID;
                 dgvAppointments.DataSource = Table.DefaultView;
+
+                ResizeDGVWidth(dgvAppointments);
+                CenterDataGridView(dgvAppointments);
             }
             else if (string.IsNullOrWhiteSpace(txbAppointmentSearch.Text))
             {

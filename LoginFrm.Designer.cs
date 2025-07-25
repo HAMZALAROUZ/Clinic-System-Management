@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.pnTop = new System.Windows.Forms.Panel();
+            this.LbTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnClose = new System.Windows.Forms.Button();
+            this.BtnMinimize = new System.Windows.Forms.Button();
+            this.BtnMaximize = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txbUsername = new System.Windows.Forms.TextBox();
             this.mtxbPassword = new System.Windows.Forms.MaskedTextBox();
             this.chbShowPassword = new System.Windows.Forms.CheckBox();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.BtnClose = new System.Windows.Forms.Button();
-            this.BtnMinimize = new System.Windows.Forms.Button();
-            this.BtnMaximize = new System.Windows.Forms.Button();
-            this.LbTitle = new System.Windows.Forms.Label();
             this.pnTop.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +54,16 @@
             this.pnTop.Size = new System.Drawing.Size(800, 60);
             this.pnTop.TabIndex = 1;
             // 
+            // LbTitle
+            // 
+            this.LbTitle.AutoSize = true;
+            this.LbTitle.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbTitle.Location = new System.Drawing.Point(31, 11);
+            this.LbTitle.Name = "LbTitle";
+            this.LbTitle.Size = new System.Drawing.Size(74, 40);
+            this.LbTitle.TabIndex = 7;
+            this.LbTitle.Text = "Login";
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.BtnClose);
@@ -64,6 +74,37 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(135, 60);
             this.panel2.TabIndex = 3;
+            // 
+            // BtnClose
+            // 
+            this.BtnClose.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnClose.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_close_window_50;
+            this.BtnClose.Location = new System.Drawing.Point(89, 17);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(34, 34);
+            this.BtnClose.TabIndex = 76;
+            this.BtnClose.UseVisualStyleBackColor = false;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // BtnMinimize
+            // 
+            this.BtnMinimize.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnMinimize.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_minus_48;
+            this.BtnMinimize.Location = new System.Drawing.Point(15, 17);
+            this.BtnMinimize.Name = "BtnMinimize";
+            this.BtnMinimize.Size = new System.Drawing.Size(34, 34);
+            this.BtnMinimize.TabIndex = 74;
+            this.BtnMinimize.UseVisualStyleBackColor = false;
+            this.BtnMinimize.Click += new System.EventHandler(this.BtnMinimize_Click);
+            // 
+            // BtnMaximize
+            // 
+            this.BtnMaximize.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnMaximize.Location = new System.Drawing.Point(52, 17);
+            this.BtnMaximize.Name = "BtnMaximize";
+            this.BtnMaximize.Size = new System.Drawing.Size(34, 34);
+            this.BtnMaximize.TabIndex = 75;
+            this.BtnMaximize.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -92,7 +133,7 @@
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.Size = new System.Drawing.Size(431, 40);
             this.txbUsername.TabIndex = 4;
-            this.txbUsername.Text = "Ha";
+            this.txbUsername.Text = "Admin";
             // 
             // mtxbPassword
             // 
@@ -128,47 +169,6 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // BtnClose
-            // 
-            this.BtnClose.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnClose.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_close_window_50;
-            this.BtnClose.Location = new System.Drawing.Point(89, 17);
-            this.BtnClose.Name = "BtnClose";
-            this.BtnClose.Size = new System.Drawing.Size(34, 34);
-            this.BtnClose.TabIndex = 76;
-            this.BtnClose.UseVisualStyleBackColor = false;
-            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
-            // 
-            // BtnMinimize
-            // 
-            this.BtnMinimize.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnMinimize.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_minus_48;
-            this.BtnMinimize.Location = new System.Drawing.Point(15, 17);
-            this.BtnMinimize.Name = "BtnMinimize";
-            this.BtnMinimize.Size = new System.Drawing.Size(34, 34);
-            this.BtnMinimize.TabIndex = 74;
-            this.BtnMinimize.UseVisualStyleBackColor = false;
-            this.BtnMinimize.Click += new System.EventHandler(this.BtnMinimize_Click);
-            // 
-            // BtnMaximize
-            // 
-            this.BtnMaximize.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnMaximize.Location = new System.Drawing.Point(52, 17);
-            this.BtnMaximize.Name = "BtnMaximize";
-            this.BtnMaximize.Size = new System.Drawing.Size(34, 34);
-            this.BtnMaximize.TabIndex = 75;
-            this.BtnMaximize.UseVisualStyleBackColor = false;
-            // 
-            // LbTitle
-            // 
-            this.LbTitle.AutoSize = true;
-            this.LbTitle.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbTitle.Location = new System.Drawing.Point(31, 11);
-            this.LbTitle.Name = "LbTitle";
-            this.LbTitle.Size = new System.Drawing.Size(74, 40);
-            this.LbTitle.TabIndex = 7;
-            this.LbTitle.Text = "Login";
             // 
             // LoginFrm
             // 

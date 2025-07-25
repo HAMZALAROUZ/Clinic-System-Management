@@ -284,9 +284,9 @@
             // pnMain
             // 
             this.pnMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnMain.Controls.Add(this.pnPatients);
             this.pnMain.Controls.Add(this.pnAppointments);
             this.pnMain.Controls.Add(this.pnUsers);
+            this.pnMain.Controls.Add(this.pnPatients);
             this.pnMain.Controls.Add(this.pnPayments);
             this.pnMain.Controls.Add(this.pnDoctors);
             this.pnMain.Controls.Add(this.pnDashboard);
