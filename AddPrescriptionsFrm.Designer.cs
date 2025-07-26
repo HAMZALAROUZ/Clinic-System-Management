@@ -30,6 +30,9 @@
         {
             this.pnTop = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnClose = new System.Windows.Forms.Button();
+            this.BtnMaximize = new System.Windows.Forms.Button();
+            this.BtnMinimize = new System.Windows.Forms.Button();
             this.lbTitle = new System.Windows.Forms.Label();
             this.cmbMedicalID = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -49,9 +52,6 @@
             this.txbMedicationName = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.BtnClose = new System.Windows.Forms.Button();
-            this.BtnMinimize = new System.Windows.Forms.Button();
-            this.BtnMaximize = new System.Windows.Forms.Button();
             this.pnTop.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +76,39 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(135, 60);
             this.panel2.TabIndex = 3;
+            // 
+            // BtnClose
+            // 
+            this.BtnClose.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnClose.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_close_window_50;
+            this.BtnClose.Location = new System.Drawing.Point(87, 13);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(34, 34);
+            this.BtnClose.TabIndex = 111;
+            this.BtnClose.UseVisualStyleBackColor = false;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // BtnMaximize
+            // 
+            this.BtnMaximize.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnMaximize.Enabled = false;
+            this.BtnMaximize.Location = new System.Drawing.Point(50, 13);
+            this.BtnMaximize.Name = "BtnMaximize";
+            this.BtnMaximize.Size = new System.Drawing.Size(34, 34);
+            this.BtnMaximize.TabIndex = 110;
+            this.BtnMaximize.UseVisualStyleBackColor = false;
+            this.BtnMaximize.Click += new System.EventHandler(this.BtnMaximize_Click);
+            // 
+            // BtnMinimize
+            // 
+            this.BtnMinimize.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnMinimize.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_minus_48;
+            this.BtnMinimize.Location = new System.Drawing.Point(13, 13);
+            this.BtnMinimize.Name = "BtnMinimize";
+            this.BtnMinimize.Size = new System.Drawing.Size(34, 34);
+            this.BtnMinimize.TabIndex = 109;
+            this.BtnMinimize.UseVisualStyleBackColor = false;
+            this.BtnMinimize.Click += new System.EventHandler(this.BtnMinimize_Click);
             // 
             // lbTitle
             // 
@@ -250,7 +283,6 @@
             this.txbMedicationName.Name = "txbMedicationName";
             this.txbMedicationName.Size = new System.Drawing.Size(241, 101);
             this.txbMedicationName.TabIndex = 90;
-            this.txbMedicationName.TextChanged += new System.EventHandler(this.txbMedicationName_TextChanged);
             // 
             // btnCancel
             // 
@@ -279,39 +311,6 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // BtnClose
-            // 
-            this.BtnClose.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnClose.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_close_window_50;
-            this.BtnClose.Location = new System.Drawing.Point(87, 13);
-            this.BtnClose.Name = "BtnClose";
-            this.BtnClose.Size = new System.Drawing.Size(34, 34);
-            this.BtnClose.TabIndex = 111;
-            this.BtnClose.UseVisualStyleBackColor = false;
-            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
-            // 
-            // BtnMinimize
-            // 
-            this.BtnMinimize.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnMinimize.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_minus_48;
-            this.BtnMinimize.Location = new System.Drawing.Point(13, 13);
-            this.BtnMinimize.Name = "BtnMinimize";
-            this.BtnMinimize.Size = new System.Drawing.Size(34, 34);
-            this.BtnMinimize.TabIndex = 109;
-            this.BtnMinimize.UseVisualStyleBackColor = false;
-            this.BtnMinimize.Click += new System.EventHandler(this.BtnMinimize_Click);
-            // 
-            // BtnMaximize
-            // 
-            this.BtnMaximize.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnMaximize.Enabled = false;
-            this.BtnMaximize.Location = new System.Drawing.Point(50, 13);
-            this.BtnMaximize.Name = "BtnMaximize";
-            this.BtnMaximize.Size = new System.Drawing.Size(34, 34);
-            this.BtnMaximize.TabIndex = 110;
-            this.BtnMaximize.UseVisualStyleBackColor = false;
-            this.BtnMaximize.Click += new System.EventHandler(this.BtnMaximize_Click);
             // 
             // AddPrescriptionsFrm
             // 

@@ -38,10 +38,6 @@ namespace ClinicSystemFormProject
             cmbMedicalID.SelectedValue = -1;
             cmbMedicalID.Text = "Select";
         }
-        private void txbMedicationName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
 
         private void AddPrescriptionsFrm_Load(object sender, EventArgs e)
@@ -56,6 +52,7 @@ namespace ClinicSystemFormProject
 
             if(ClinicMainForm.Mode == ClinicMainForm.enMode.enUpdate)
             {
+                    lbTitle.Text = "Update Prescription";
                     lbPrescriptionID.Text = Prescription.ID.ToString();
                     cmbMedicalID.SelectedValue = Prescription.MedicalRecordID;
                     txbDosage.Text = Prescription.Dosage;

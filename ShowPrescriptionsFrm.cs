@@ -52,7 +52,7 @@ namespace ClinicSystemFormProject
         {
             if (LoadData())
             {
-
+                
                 ResizeDGVWidth(dgvPrescriptionRecords);
 
                 dgvPrescriptionRecords.Top = (pnMain.Height - dgvPrescriptionRecords.Height) / 2;
@@ -111,7 +111,8 @@ namespace ClinicSystemFormProject
             {
                 if (!dgvPrescriptionRecords.Columns.Contains("UP") && !dgvPrescriptionRecords.Columns.Contains("DE"))
                     AddImageColumn(dgvPrescriptionRecords);
-                ResizeDGVWidth(dgvPrescriptionRecords);
+                
+                    ResizeDGVWidth(dgvPrescriptionRecords);
 
                 dgvPrescriptionRecords.Top = (pnMain.Height - dgvPrescriptionRecords.Height) / 2;
                 dgvPrescriptionRecords.Left = (pnMain.Width - dgvPrescriptionRecords.Width) / 2;
@@ -183,7 +184,10 @@ namespace ClinicSystemFormProject
                 }            
         
         }
-
+        private void CenterDataGridView(DataGridView dgv)
+        {
+            dgv.Left = (pnMain.Width - dgv.Width) / 2;
+        }
         private void txbPrescriptionSearch_TextChanged(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txbPrescriptionSearch.Text) && int.TryParse(txbPrescriptionSearch.Text, out int ID))
@@ -193,6 +197,9 @@ namespace ClinicSystemFormProject
 
                 table.DefaultView.RowFilter = "PrescriptionID = " + ID;
                 dgvPrescriptionRecords.DataSource = table.DefaultView;
+
+                ResizeDGVWidth(dgvPrescriptionRecords);
+                CenterDataGridView(dgvPrescriptionRecords);
             }
             
             else if (string.IsNullOrWhiteSpace(txbPrescriptionSearch.Text))

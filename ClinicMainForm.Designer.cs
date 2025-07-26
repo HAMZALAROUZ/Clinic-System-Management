@@ -54,6 +54,11 @@
             this.txbUserSearch = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvUsers = new System.Windows.Forms.DataGridView();
+            this.pnPatients = new System.Windows.Forms.Panel();
+            this.btnPatientAdd = new System.Windows.Forms.Button();
+            this.txbPatientSearch = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dgvPatients = new System.Windows.Forms.DataGridView();
             this.pnPayments = new System.Windows.Forms.Panel();
             this.btnAddPayment = new System.Windows.Forms.Button();
             this.txbPaymentSearch = new System.Windows.Forms.TextBox();
@@ -63,15 +68,10 @@
             this.btnDoctorAdd = new System.Windows.Forms.Button();
             this.txbDoctorSearch = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dgvDoctors = new System.Windows.Forms.DataGridView();
-            this.pnPatients = new System.Windows.Forms.Panel();
-            this.btnPatientAdd = new System.Windows.Forms.Button();
-            this.txbPatientSearch = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dgvPatients = new System.Windows.Forms.DataGridView();
             this.pnDashboard = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvDoctors = new System.Windows.Forms.DataGridView();
             this.pnTop.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnLeft.SuspendLayout();
@@ -81,14 +81,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppointments)).BeginInit();
             this.pnUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
+            this.pnPatients.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPatients)).BeginInit();
             this.pnPayments.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).BeginInit();
             this.pnDoctors.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDoctors)).BeginInit();
-            this.pnPatients.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPatients)).BeginInit();
             this.pnDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDoctors)).BeginInit();
             this.SuspendLayout();
             // 
             // pnTop
@@ -285,10 +285,10 @@
             // 
             this.pnMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnMain.Controls.Add(this.pnAppointments);
+            this.pnMain.Controls.Add(this.pnDoctors);
             this.pnMain.Controls.Add(this.pnUsers);
             this.pnMain.Controls.Add(this.pnPatients);
             this.pnMain.Controls.Add(this.pnPayments);
-            this.pnMain.Controls.Add(this.pnDoctors);
             this.pnMain.Controls.Add(this.pnDashboard);
             this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMain.Location = new System.Drawing.Point(252, 60);
@@ -355,7 +355,7 @@
             this.dgvAppointments.ReadOnly = true;
             this.dgvAppointments.RowHeadersWidth = 62;
             this.dgvAppointments.RowTemplate.Height = 28;
-            this.dgvAppointments.Size = new System.Drawing.Size(805, 362);
+            this.dgvAppointments.Size = new System.Drawing.Size(885, 362);
             this.dgvAppointments.TabIndex = 2;
             this.dgvAppointments.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAppointments_CellContentClick);
             // 
@@ -422,6 +422,69 @@
             this.dgvUsers.TabIndex = 3;
             this.dgvUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsers_CellContentClick);
             // 
+            // pnPatients
+            // 
+            this.pnPatients.Controls.Add(this.btnPatientAdd);
+            this.pnPatients.Controls.Add(this.txbPatientSearch);
+            this.pnPatients.Controls.Add(this.label6);
+            this.pnPatients.Controls.Add(this.dgvPatients);
+            this.pnPatients.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnPatients.Location = new System.Drawing.Point(0, 0);
+            this.pnPatients.Name = "pnPatients";
+            this.pnPatients.Size = new System.Drawing.Size(1257, 786);
+            this.pnPatients.TabIndex = 2;
+            this.pnPatients.Visible = false;
+            // 
+            // btnPatientAdd
+            // 
+            this.btnPatientAdd.BackColor = System.Drawing.SystemColors.Control;
+            this.btnPatientAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnPatientAdd.FlatAppearance.BorderSize = 2;
+            this.btnPatientAdd.Font = new System.Drawing.Font("MV Boli", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPatientAdd.Location = new System.Drawing.Point(973, 62);
+            this.btnPatientAdd.Name = "btnPatientAdd";
+            this.btnPatientAdd.Size = new System.Drawing.Size(152, 43);
+            this.btnPatientAdd.TabIndex = 18;
+            this.btnPatientAdd.Text = "Add";
+            this.btnPatientAdd.UseVisualStyleBackColor = false;
+            this.btnPatientAdd.Click += new System.EventHandler(this.btnPatientAdd_Click);
+            // 
+            // txbPatientSearch
+            // 
+            this.txbPatientSearch.Font = new System.Drawing.Font("MV Boli", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbPatientSearch.Location = new System.Drawing.Point(97, 60);
+            this.txbPatientSearch.Name = "txbPatientSearch";
+            this.txbPatientSearch.Size = new System.Drawing.Size(352, 43);
+            this.txbPatientSearch.TabIndex = 17;
+            this.txbPatientSearch.TextChanged += new System.EventHandler(this.txbPatientSearch_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(96, 26);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(286, 23);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Search By : Patient ID / Name";
+            // 
+            // dgvPatients
+            // 
+            this.dgvPatients.AllowUserToAddRows = false;
+            this.dgvPatients.AllowUserToDeleteRows = false;
+            this.dgvPatients.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvPatients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvPatients.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvPatients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPatients.Location = new System.Drawing.Point(197, 208);
+            this.dgvPatients.Name = "dgvPatients";
+            this.dgvPatients.ReadOnly = true;
+            this.dgvPatients.RowHeadersWidth = 62;
+            this.dgvPatients.RowTemplate.Height = 28;
+            this.dgvPatients.Size = new System.Drawing.Size(805, 362);
+            this.dgvPatients.TabIndex = 0;
+            this.dgvPatients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPatients_CellContentClick);
+            // 
             // pnPayments
             // 
             this.pnPayments.Controls.Add(this.btnAddPayment);
@@ -487,10 +550,10 @@
             // 
             // pnDoctors
             // 
+            this.pnDoctors.Controls.Add(this.dgvDoctors);
             this.pnDoctors.Controls.Add(this.btnDoctorAdd);
             this.pnDoctors.Controls.Add(this.txbDoctorSearch);
             this.pnDoctors.Controls.Add(this.label5);
-            this.pnDoctors.Controls.Add(this.dgvDoctors);
             this.pnDoctors.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnDoctors.Location = new System.Drawing.Point(0, 0);
             this.pnDoctors.Name = "pnDoctors";
@@ -531,86 +594,6 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Search By : Doctor ID / Name";
             // 
-            // dgvDoctors
-            // 
-            this.dgvDoctors.AllowUserToAddRows = false;
-            this.dgvDoctors.AllowUserToDeleteRows = false;
-            this.dgvDoctors.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgvDoctors.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvDoctors.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvDoctors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDoctors.Location = new System.Drawing.Point(168, 213);
-            this.dgvDoctors.Name = "dgvDoctors";
-            this.dgvDoctors.ReadOnly = true;
-            this.dgvDoctors.RowHeadersWidth = 62;
-            this.dgvDoctors.RowTemplate.Height = 28;
-            this.dgvDoctors.Size = new System.Drawing.Size(805, 362);
-            this.dgvDoctors.TabIndex = 1;
-            this.dgvDoctors.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDoctors_CellContentClick);
-            // 
-            // pnPatients
-            // 
-            this.pnPatients.Controls.Add(this.btnPatientAdd);
-            this.pnPatients.Controls.Add(this.txbPatientSearch);
-            this.pnPatients.Controls.Add(this.label6);
-            this.pnPatients.Controls.Add(this.dgvPatients);
-            this.pnPatients.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnPatients.Location = new System.Drawing.Point(0, 0);
-            this.pnPatients.Name = "pnPatients";
-            this.pnPatients.Size = new System.Drawing.Size(1257, 786);
-            this.pnPatients.TabIndex = 2;
-            this.pnPatients.Visible = false;
-            // 
-            // btnPatientAdd
-            // 
-            this.btnPatientAdd.BackColor = System.Drawing.SystemColors.Control;
-            this.btnPatientAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnPatientAdd.FlatAppearance.BorderSize = 2;
-            this.btnPatientAdd.Font = new System.Drawing.Font("MV Boli", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPatientAdd.Location = new System.Drawing.Point(973, 62);
-            this.btnPatientAdd.Name = "btnPatientAdd";
-            this.btnPatientAdd.Size = new System.Drawing.Size(152, 43);
-            this.btnPatientAdd.TabIndex = 18;
-            this.btnPatientAdd.Text = "Add";
-            this.btnPatientAdd.UseVisualStyleBackColor = false;
-            this.btnPatientAdd.Click += new System.EventHandler(this.btnPatientAdd_Click);
-            // 
-            // txbPatientSearch
-            // 
-            this.txbPatientSearch.Font = new System.Drawing.Font("MV Boli", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPatientSearch.Location = new System.Drawing.Point(97, 60);
-            this.txbPatientSearch.Name = "txbPatientSearch";
-            this.txbPatientSearch.Size = new System.Drawing.Size(352, 43);
-            this.txbPatientSearch.TabIndex = 17;
-            this.txbPatientSearch.TextChanged += new System.EventHandler(this.txbPatientSearch_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(96, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(286, 23);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Search By : Patient ID / Name";
-            // 
-            // dgvPatients
-            // 
-            this.dgvPatients.AllowUserToAddRows = false;
-            this.dgvPatients.AllowUserToDeleteRows = false;
-            this.dgvPatients.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgvPatients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvPatients.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvPatients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPatients.Location = new System.Drawing.Point(197, 208);
-            this.dgvPatients.Name = "dgvPatients";
-            this.dgvPatients.ReadOnly = true;
-            this.dgvPatients.RowHeadersWidth = 62;
-            this.dgvPatients.RowTemplate.Height = 28;
-            this.dgvPatients.Size = new System.Drawing.Size(805, 362);
-            this.dgvPatients.TabIndex = 0;
-            this.dgvPatients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPatients_CellContentClick);
-            // 
             // pnDashboard
             // 
             this.pnDashboard.Controls.Add(this.pictureBox1);
@@ -642,6 +625,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Clinic System Management";
             // 
+            // dgvDoctors
+            // 
+            this.dgvDoctors.AllowUserToAddRows = false;
+            this.dgvDoctors.AllowUserToDeleteRows = false;
+            this.dgvDoctors.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvDoctors.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvDoctors.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvDoctors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDoctors.Location = new System.Drawing.Point(226, 212);
+            this.dgvDoctors.Name = "dgvDoctors";
+            this.dgvDoctors.ReadOnly = true;
+            this.dgvDoctors.RowHeadersWidth = 62;
+            this.dgvDoctors.RowTemplate.Height = 28;
+            this.dgvDoctors.Size = new System.Drawing.Size(805, 362);
+            this.dgvDoctors.TabIndex = 21;
+            // 
             // ClinicMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -665,18 +664,18 @@
             this.pnUsers.ResumeLayout(false);
             this.pnUsers.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
+            this.pnPatients.ResumeLayout(false);
+            this.pnPatients.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPatients)).EndInit();
             this.pnPayments.ResumeLayout(false);
             this.pnPayments.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPayments)).EndInit();
             this.pnDoctors.ResumeLayout(false);
             this.pnDoctors.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDoctors)).EndInit();
-            this.pnPatients.ResumeLayout(false);
-            this.pnPatients.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPatients)).EndInit();
             this.pnDashboard.ResumeLayout(false);
             this.pnDashboard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDoctors)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -695,7 +694,6 @@
         private System.Windows.Forms.Panel pnUsers;
         private System.Windows.Forms.Panel pnPayments;
         private System.Windows.Forms.DataGridView dgvPatients;
-        private System.Windows.Forms.DataGridView dgvDoctors;
         private System.Windows.Forms.DataGridView dgvAppointments;
         private System.Windows.Forms.DataGridView dgvUsers;
         private System.Windows.Forms.DataGridView dgvPayments;
@@ -727,6 +725,7 @@
         private System.Windows.Forms.Button BtnDashboard;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button BtnLogout;
+        private System.Windows.Forms.DataGridView dgvDoctors;
     }
 }
 

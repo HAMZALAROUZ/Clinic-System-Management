@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.pnTop = new System.Windows.Forms.Panel();
+            this.LbTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnClose = new System.Windows.Forms.Button();
+            this.BtnMinimize = new System.Windows.Forms.Button();
+            this.BtnMaximize = new System.Windows.Forms.Button();
             this.txbPrescriptionSearch = new System.Windows.Forms.TextBox();
             this.btnPrescriptionAdd = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvPrescriptionRecords = new System.Windows.Forms.DataGridView();
             this.pnMain = new System.Windows.Forms.Panel();
-            this.BtnClose = new System.Windows.Forms.Button();
-            this.BtnMinimize = new System.Windows.Forms.Button();
-            this.BtnMaximize = new System.Windows.Forms.Button();
-            this.LbTitle = new System.Windows.Forms.Label();
             this.pnTop.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrescriptionRecords)).BeginInit();
@@ -55,6 +55,16 @@
             this.pnTop.Size = new System.Drawing.Size(1249, 60);
             this.pnTop.TabIndex = 2;
             // 
+            // LbTitle
+            // 
+            this.LbTitle.AutoSize = true;
+            this.LbTitle.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbTitle.Location = new System.Drawing.Point(23, 9);
+            this.LbTitle.Name = "LbTitle";
+            this.LbTitle.Size = new System.Drawing.Size(225, 40);
+            this.LbTitle.TabIndex = 26;
+            this.LbTitle.Text = "Prescriptions Records";
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.BtnClose);
@@ -65,6 +75,39 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(135, 60);
             this.panel2.TabIndex = 3;
+            // 
+            // BtnClose
+            // 
+            this.BtnClose.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnClose.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_close_window_50;
+            this.BtnClose.Location = new System.Drawing.Point(87, 13);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(34, 34);
+            this.BtnClose.TabIndex = 84;
+            this.BtnClose.UseVisualStyleBackColor = false;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // BtnMinimize
+            // 
+            this.BtnMinimize.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnMinimize.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_minus_48;
+            this.BtnMinimize.Location = new System.Drawing.Point(13, 13);
+            this.BtnMinimize.Name = "BtnMinimize";
+            this.BtnMinimize.Size = new System.Drawing.Size(34, 34);
+            this.BtnMinimize.TabIndex = 82;
+            this.BtnMinimize.UseVisualStyleBackColor = false;
+            this.BtnMinimize.Click += new System.EventHandler(this.BtnMinimize_Click);
+            // 
+            // BtnMaximize
+            // 
+            this.BtnMaximize.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnMaximize.Enabled = false;
+            this.BtnMaximize.Location = new System.Drawing.Point(50, 13);
+            this.BtnMaximize.Name = "BtnMaximize";
+            this.BtnMaximize.Size = new System.Drawing.Size(34, 34);
+            this.BtnMaximize.TabIndex = 83;
+            this.BtnMaximize.UseVisualStyleBackColor = false;
+            this.BtnMaximize.Click += new System.EventHandler(this.BtnMaximize_Click);
             // 
             // txbPrescriptionSearch
             // 
@@ -127,49 +170,6 @@
             this.pnMain.Name = "pnMain";
             this.pnMain.Size = new System.Drawing.Size(1249, 659);
             this.pnMain.TabIndex = 29;
-            // 
-            // BtnClose
-            // 
-            this.BtnClose.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnClose.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_close_window_50;
-            this.BtnClose.Location = new System.Drawing.Point(87, 13);
-            this.BtnClose.Name = "BtnClose";
-            this.BtnClose.Size = new System.Drawing.Size(34, 34);
-            this.BtnClose.TabIndex = 84;
-            this.BtnClose.UseVisualStyleBackColor = false;
-            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
-            // 
-            // BtnMinimize
-            // 
-            this.BtnMinimize.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnMinimize.Image = global::ClinicSystemFormProject.Properties.Resources.icons8_minus_48;
-            this.BtnMinimize.Location = new System.Drawing.Point(13, 13);
-            this.BtnMinimize.Name = "BtnMinimize";
-            this.BtnMinimize.Size = new System.Drawing.Size(34, 34);
-            this.BtnMinimize.TabIndex = 82;
-            this.BtnMinimize.UseVisualStyleBackColor = false;
-            this.BtnMinimize.Click += new System.EventHandler(this.BtnMinimize_Click);
-            // 
-            // BtnMaximize
-            // 
-            this.BtnMaximize.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnMaximize.Enabled = false;
-            this.BtnMaximize.Location = new System.Drawing.Point(50, 13);
-            this.BtnMaximize.Name = "BtnMaximize";
-            this.BtnMaximize.Size = new System.Drawing.Size(34, 34);
-            this.BtnMaximize.TabIndex = 83;
-            this.BtnMaximize.UseVisualStyleBackColor = false;
-            this.BtnMaximize.Click += new System.EventHandler(this.BtnMaximize_Click);
-            // 
-            // LbTitle
-            // 
-            this.LbTitle.AutoSize = true;
-            this.LbTitle.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbTitle.Location = new System.Drawing.Point(23, 9);
-            this.LbTitle.Name = "LbTitle";
-            this.LbTitle.Size = new System.Drawing.Size(225, 40);
-            this.LbTitle.TabIndex = 26;
-            this.LbTitle.Text = "Prescriptions Records";
             // 
             // ShowPrescriptionsFrm
             // 

@@ -86,7 +86,10 @@ namespace ClinicSystemFormProject
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
+        private void CenterDataGridView(DataGridView dgv)
+        {
+            dgv.Left = (pnMain.Width - dgv.Width) / 2;
+        }
         private void txbMedicalSearch_TextChanged(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txbMedicalSearch.Text) && int.TryParse(txbMedicalSearch.Text, out int ID))
@@ -96,6 +99,9 @@ namespace ClinicSystemFormProject
 
                 Table.DefaultView.RowFilter = "MedicalRecordID = " + ID;
                 dgvMedicalRecords.DataSource = Table.DefaultView;
+
+                ResizeDGVWidth(dgvMedicalRecords);
+                CenterDataGridView(dgvMedicalRecords);
             }
             else if (string.IsNullOrWhiteSpace(txbMedicalSearch.Text))
             {
